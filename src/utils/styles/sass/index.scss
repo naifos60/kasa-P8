@@ -1,1 +1,10 @@
-@import"./header.scss"
+@import"./header.scss";
+@import"./home.scss";
+@import"./card.scss";
+
+*{
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat';
+}

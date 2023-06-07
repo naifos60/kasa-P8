@@ -1,0 +1,17 @@
+.card{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    background: linear-gradient(#ff6060, #4b1c1c);
+    position: relative;
+    &_title{
+        color: white;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+        width: 30%;
+    }
+}
