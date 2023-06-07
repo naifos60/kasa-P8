@@ -1,0 +1,16 @@
+.header{
+    max-width: 1440px;
+    padding: 45px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &-nav{
+        color: #FF6060;
+        margin-left: 57px;
+    }
+    &-img{
+        width: 210.32px;
+        height: 68px;
+    }
+}
