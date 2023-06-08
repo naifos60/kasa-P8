@@ -1,11 +1,10 @@
-import acceuil from '../../assets/acceuil.png';
+import Banner from '../../components/Banner/banner';
 import Card from '../../components/Card/card';
 
 function Home() {
   return (
     <div className="home">
-      <h2 className='home_img-text'>Chez vous, partout et ailleurs</h2>
-      <img src={acceuil} alt='falaise bord de mer' className='home_img'/>     
+        <Banner /> 
     <div className="home_card-container">
         <Card />
         <Card />

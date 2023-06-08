@@ -5,6 +5,7 @@ import './utils/styles/css/index.css';
 import Home from './pages/Home';
 import Propos from './pages/APropos';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
        <Route path='/' element={<Home />} />
        <Route path='/propos' element={<Propos />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

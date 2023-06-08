@@ -10,7 +10,11 @@
   color: #FF6060;
   margin-left: 57px;
   font-size: 24px;
+  text-decoration: none;
   font-family: "Montserrat";
+}
+.header-nav:hover {
+  text-decoration: underline;
 }
 .header-img {
   width: 210.32px;
@@ -25,6 +29,10 @@
   align-items: center;
   margin: 5px 100px;
   position: relative;
+}
+.home_banner {
+  width: 100%;
+  text-align: center;
 }
 .home_img {
   width: 100%;
@@ -60,8 +68,9 @@
   width: 340px;
   height: 340px;
   border-radius: 10px;
-  background: linear-gradient(#ff6060, #4b1c1c);
+  background: linear-gradient(#ff6060, #6d1c1c);
   position: relative;
+  cursor: pointer;
 }
 .card_title {
   color: white;
@@ -72,6 +81,26 @@
   font-weight: 500;
   line-height: 25.67px;
   width: 30%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: #FFFFFF;
+  margin-top: 50px;
+  padding-bottom: 29px;
+  padding-top: 66px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34.22px;
+}
+.footer_logo {
+  width: 122px;
+  height: 39.44px;
+  margin-bottom: 42px;
 }
 
 * {

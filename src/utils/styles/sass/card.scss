@@ -2,8 +2,9 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
-    background: linear-gradient(#ff6060, #4b1c1c);
+    background: linear-gradient(#ff6060, #6d1c1c);
     position: relative;
+    cursor: pointer;
     &_title{
         color: white;
         position: absolute;
