@@ -5,6 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .header-nav {
   color: #FF6060;
@@ -27,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px 100px;
+  margin: 5px auto;
   position: relative;
 }
 .home_banner {
@@ -101,6 +102,38 @@
   width: 122px;
   height: 39.44px;
   margin-bottom: 42px;
+}
+
+.error {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.error_msg {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+  margin-bottom: 139px;
+  margin-top: 139px;
+  color: #FF6060;
+}
+.error_img {
+  margin-top: 145px;
+  height: 263px;
+  width: 597px;
+}
+
+.return_link {
+  color: #FF6060;
+  margin-bottom: 139px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 * {
