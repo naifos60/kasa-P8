@@ -4,20 +4,24 @@ import Logements from '../../data/logements';
 import acceuil from '../../assets/acceuil.png';
 
 function Home() {
-const locations = [Logements];
+  const locations = [Logements];
   return (
     <div className="home">
         <Banner
         cover = {acceuil}
         text = "Chez vous, partout et ailleurs" />
         <div className="home_card-container">
-        {locations.map((loc) => (
-          <Card 
-          key= {loc.id}
+        {locations.map ((loc) => (
+          <Card key= {loc.id}>
           cover= {loc.cover}
           title= {loc.title}
-          />
+          </Card>   
         ))}
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
     </div>
     ) 

@@ -1,9 +1,10 @@
-@import"./header.scss";
-@import"./home.scss";
-@import"./card.scss";
-@import"./footer.scss";
-@import"./error.scss";
-@import"./propos.scss";
+@import"../../../pages/Home/style/home.scss";
+@import"../../../components/Header/style/header.scss";
+@import"../../../components/Card/style/card.scss";
+@import"../../../components/Footer/style/footer.scss";
+@import"../../../components/Error/style/error.scss";
+@import"../../../pages/APropos/style/propos.scss";
+@import"../../../components/Banner/style/banner.scss";
 
 *{
     margin: 0px;

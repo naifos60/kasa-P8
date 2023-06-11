@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import rectangle from '../../assets/Rectangle 2.png'
 
 function Card({cover, title}){
     return(
@@ -11,6 +12,11 @@ function Card({cover, title}){
 Card.propTypes = {
     cover: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+}
+
+Card.defaultProps = {
+    cover: rectangle,
+    title: 'Titre de la location',
 }
 
 export default Card
