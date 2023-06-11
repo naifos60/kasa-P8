@@ -1,8 +1,11 @@
+import Banner from '../../components/Banner/banner';
+import propos from '../../assets/propos.png';
 
 function Propos(){
     return(
-        <div>
-            <h1>À PROPOS</h1>   
+        <div className='propos'>
+            <Banner
+            cover= {propos} />   
         </div>
     )
 }

@@ -136,6 +136,15 @@
   text-align: left;
 }
 
+.propos {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
 * {
   margin: 0px;
   padding: 0;
