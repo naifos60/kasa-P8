@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   margin: 5px auto;
-  position: relative;
+  padding: 0 100px;
 }
 .home_card-container {
   width: 100%;
@@ -158,6 +158,62 @@
   padding: 0;
   border: 0;
   font-family: "Montserrat";
+}
+
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+    padding: 20px;
+  }
+  .header {
+    padding: 0;
+    margin: 30px auto;
+  }
+  .header-nav {
+    margin-left: 26px;
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+  .header-img {
+    width: 145px;
+    height: 46.88px;
+  }
+  .banner {
+    height: 111px;
+    text-align: start;
+    margin-bottom: 22px;
+    position: relative;
+  }
+  .banner_img {
+    height: 100%;
+  }
+  .banner_img-text {
+    position: absolute;
+    top: 25%;
+    left: 19px;
+    font-size: 24px;
+    width: 66%;
+  }
+  .home {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .home_card-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 27px;
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

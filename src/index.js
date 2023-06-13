@@ -7,6 +7,7 @@ import Propos from './pages/APropos/aPropos.jsx';
 import Header from './components/Header/header.jsx';
 import Footer from './components/Footer/footer.jsx';
 import Error from './components/Error/error.jsx';
+import Fiches from './pages/Fiches/fiches.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,6 +19,7 @@ root.render(
        <Route path='/' element={<Home />} />
        <Route path='/propos' element={<Propos />} />
        <Route path='*' element={<Error />} />
+       <Route path='/fiches/:numberLogements' elements={<Fiches />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,4 +1,4 @@
-function Logements(){
+
     const data = [
             {
             "id": "c67ab8a7",
@@ -618,7 +618,6 @@ function Logements(){
             ]
             }
         ]
- return data;
-}
 
-export default Logements
+
+export default data
