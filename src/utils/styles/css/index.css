@@ -131,6 +131,10 @@
   align-items: center;
   margin: 5px auto;
 }
+.propos .banner {
+  height: 223px;
+  margin-bottom: 38px;
+}
 
 .banner {
   width: 100%;
@@ -158,19 +162,22 @@
   height: 52px;
   margin-bottom: 32px;
   overflow: hidden;
-  transition: all 0.2s ease-in;
 }
 .collapse_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px 10px 15px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.collapse_title h4 {
   font-size: 24px;
   font-weight: 500;
   line-height: 34.22px;
-  background-color: #FF6060;
   color: #FFFFFF;
-  position: relative;
 }
 .collapse_icon {
   position: absolute;
@@ -178,10 +185,9 @@
   right: 20px;
   width: 24px;
   height: 13.71px;
-  cursor: pointer;
   transform: rotate(0);
   transform-origin: 50% 50%;
-  transition: all 0.1s ease-in;
+  transition: all 0.6s ease-in;
 }
 .collapse_icon:hover {
   width: 26px;
@@ -201,7 +207,7 @@
   line-height: 25.67px;
   transform: scaleY(0);
   transform-origin: 50% 0;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in 0.4s;
 }
 .collapse_content-text {
   visibility: hidden;
@@ -209,7 +215,7 @@
   opacity: 0;
   transform: scaleY(0);
   transform-origin: 50% 0;
-  transition: all 0.2s 0.2s ease-in;
+  transition: all 0.2s ease-in 0.2s;
 }
 
 .active {
@@ -217,11 +223,19 @@
   height: auto;
   overflow: visible;
   opacity: 1;
+  transform-origin: 50% 0;
   transform: scaleY(1);
+  transition: all 0.6s ease-in;
 }
-
 .active .collapse_icon {
-  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+  transform: rotate(-180deg);
+}
+.active .collapse_content {
+  transition: all 0.2s ease-in 0.2s;
+}
+.active .collapse_content-text {
+  transition: all 0.2S ease-in 0.4s;
 }
 
 * {
@@ -284,6 +298,28 @@
     text-align: center;
     font-size: 12px;
     margin-top: 0px;
+  }
+  .collapse {
+    margin-bottom: 0;
+  }
+  .collapse_title {
+    padding: 0 10px;
+  }
+  .collapse_title h4 {
+    font-size: 13px;
+  }
+  .collapse_content {
+    font-size: 10px;
+  }
+  .collapse_icon {
+    width: 16px;
+    height: 9.14px;
+    top: 10px;
+    right: 10px;
+  }
+  .collapse_icon:hover {
+    width: 18px;
+    height: 11px;
   }
 }
 
