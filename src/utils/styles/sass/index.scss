@@ -34,9 +34,11 @@
         height: 111px;
         text-align: start;
         margin-bottom: 22px;
+        border-radius: 10px;
         position: relative;
     &_img{
         height: 100%;
+        border-radius: 10px;
         &-text{
             position: absolute;
             top: 25%;
@@ -88,4 +90,20 @@
         }
         }
     } 
+    .error{
+        &_msg{
+            width: 260px;
+            font-size: 18px;
+            line-height: 25.67px;
+            margin-bottom: 113px;
+            text-align: center;
+        }
+        &_img{
+            height: 99px;
+            width: 198px;
+        }
+    }
+    .return_link{
+        margin-bottom: 113px;
+    }
 }

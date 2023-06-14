@@ -2,7 +2,6 @@
     width: 82.5%;
     height: 52px;
     margin-bottom: 32px;
-    overflow: hidden;
     &_title{
         display: flex;
         align-items: center;
@@ -27,17 +26,13 @@
         height: 13.71px; 
         transform: rotate(0);
         transform-origin: 50% 50%;
-        transition: all .6s ease-in;
+        transition: all .4s ease-in;
         &:hover{
             width: 26px;
             height: 16px;
         }
     }
     &_content{
-        visibility: hidden;
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
         background-color: #F6F6F6;
         color: #FF6060;
         margin-bottom: 30px;
@@ -47,14 +42,18 @@
         line-height: 25.67px;
         transform: scaleY(0);
         transform-origin: 50% 0;
-        transition: all .2s  ease-in .4s;
-    &-text{
         visibility: hidden;
         height: 0;
         opacity: 0;
+        overflow: hidden;
+        transition: all .2s  ease-in .2s;
+    &-text{
         transform: scaleY(0);
         transform-origin: 50% 0;
-        transition: all .2s ease-in .2s;
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        transition: all .2s ease-in;
     }
     }     
 }
@@ -65,16 +64,16 @@
     opacity: 1;
     transform-origin: 50% 0;
     transform: scaleY(1);
-    transition: all .6s ease-in;
+    transition: all .4s ease-in;
     & .collapse{
         &_icon{
             transform-origin: 50% 50%;
             transform: rotate(-180deg);
         }
         &_content{
-            transition: all .2s  ease-in .2s;
+            transition: all .2s  ease-in .1s;
             &-text{
-                transition: all .2S ease-in .4s;
+                transition: all .2S ease-in .2s;
             }
         }
     }
