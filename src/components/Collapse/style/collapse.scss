@@ -23,6 +23,9 @@
         width: 24px;
         height: 13.71px;
         cursor: pointer;
+        transform: rotate(0);
+        transform-origin: 50% 50%;
+        transition: all .1s ease-in;
         &:hover{
             width: 26px;
             height: 16px;
@@ -60,5 +63,7 @@
     opacity: 1;
     transform: scaleY(1);
     }
-
+.active .collapse_icon{
+    transform: rotate(180deg);
+}
 

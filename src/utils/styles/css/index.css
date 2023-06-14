@@ -11,6 +11,7 @@
   width: 100%;
   padding-top: 56px;
   padding-bottom: 43px;
+  margin-bottom: 50px;
   border-radius: 25px;
   background: #F6F6F6;
   display: flex;
@@ -78,7 +79,6 @@
   width: 100%;
   background-color: black;
   color: #FFFFFF;
-  margin-top: 50px;
   padding-bottom: 29px;
   padding-top: 66px;
   font-size: 24px;
@@ -179,6 +179,9 @@
   width: 24px;
   height: 13.71px;
   cursor: pointer;
+  transform: rotate(0);
+  transform-origin: 50% 50%;
+  transition: all 0.1s ease-in;
 }
 .collapse_icon:hover {
   width: 26px;
@@ -215,6 +218,10 @@
   overflow: visible;
   opacity: 1;
   transform: scaleY(1);
+}
+
+.active .collapse_icon {
+  transform: rotate(180deg);
 }
 
 * {
