@@ -6,7 +6,7 @@ import Home from './pages/Home/home.jsx';
 import Propos from './pages/APropos/aPropos.jsx';
 import Header from './components/Header/header.jsx';
 import Footer from './components/Footer/footer.jsx';
-import Error from './components/Error/error.jsx';
+import Error from './pages/Error/error.jsx';
 import Fiches from './pages/Fiches/fiches.jsx';
 
 

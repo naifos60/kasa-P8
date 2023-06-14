@@ -1,4 +1,4 @@
-const urlApi = '../../public/logement.json';
+const urlApi = '/logement.json';
 
 async function logements(){
     const result = await fetch(urlApi);
