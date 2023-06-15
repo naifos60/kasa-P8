@@ -136,6 +136,12 @@
   margin-bottom: 38px;
 }
 
+.fiche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner {
   width: 100%;
   text-align: center;
@@ -235,6 +241,25 @@
 }
 .active .collapse_content-text {
   transition: all 0.2S ease-in 0.2s;
+}
+
+:root {
+  --heights: 415px;
+  --widths: 100%;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: var(--widths);
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
 }
 
 * {
