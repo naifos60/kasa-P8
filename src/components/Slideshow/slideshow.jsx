@@ -1,7 +1,8 @@
 function Slideshow({img}){
     return(
     <div className="slideshow">
-        <img className="slideshow_image" src={img} alt='vue loc'/>
+        <img src={img} className="slideshow_image"  alt='vue loc'/>
+        <div className="dot"></div>
     </div>
     )
 }
