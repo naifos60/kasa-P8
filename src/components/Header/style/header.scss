@@ -15,6 +15,9 @@
         &:hover{
             text-decoration: underline;
         }
+        &.active{
+            text-decoration: underline;
+        }
     }
     &-img{
         width: 210.32px;

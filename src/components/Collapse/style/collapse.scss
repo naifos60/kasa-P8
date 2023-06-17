@@ -78,3 +78,13 @@
         }
     }
 }
+
+.loc_info{
+    &-collapse{
+        display: flex;
+        margin-bottom: 50px;
+        & .collapse{
+            margin-right: 76px;
+        }  
+    }
+}

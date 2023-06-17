@@ -41,6 +41,9 @@
 .header-nav:hover {
   text-decoration: underline;
 }
+.header-nav.active {
+  text-decoration: underline;
+}
 .header-img {
   width: 210.32px;
   height: 68px;
@@ -144,39 +147,6 @@
   margin: 0 auto;
 }
 
-.loc_info {
-  width: 51%;
-  height: 51px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #FF6060;
-}
-.loc_info-title {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 51.34px;
-}
-.loc_info-location {
-  font-size: 18px;
-  line-height: 25.67px;
-}
-.loc_info-tags {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 35px;
-  margin-bottom: 24px;
-}
-.loc_info-collapse {
-  display: flex;
-  margin-bottom: 50px;
-}
-.loc_info-collapse .collapse {
-  margin-right: 76px;
-}
-
 .banner {
   width: 100%;
   text-align: center;
@@ -278,6 +248,14 @@
   transition: all 0.2S ease-in 0.2s;
 }
 
+.loc_info-collapse {
+  display: flex;
+  margin-bottom: 50px;
+}
+.loc_info-collapse .collapse {
+  margin-right: 76px;
+}
+
 .slideshow {
   height: 415px;
   width: 100%;
@@ -309,6 +287,60 @@
   text-align: center;
   margin-right: 10px;
   margin-top: 20px;
+}
+
+.loc_info-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 25px;
+  font-size: 14px;
+  line-height: 19.96px;
+  color: white;
+  border-radius: 12px;
+  background-color: #FF6060;
+  padding: 3px 30px;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.loc_info-tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.loc_info {
+  width: 51%;
+  height: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #FF6060;
+}
+.loc_info-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
+}
+.loc_info-location {
+  font-size: 18px;
+  line-height: 25.67px;
 }
 
 * {

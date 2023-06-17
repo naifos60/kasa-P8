@@ -9,6 +9,9 @@
 @import"../../../components/Collapse/style/collapse.scss";
 @import"../../../components/Slideshow/style/slideshow.scss";
 @import"../../../components/Tags/style/tags.scss";
+@import"../../../components/Tags/style/tags.scss";
+@import"../../../components/Title/style/title.scss";
+
 *{
     margin: 0px;
     padding: 0;
@@ -27,11 +30,11 @@
         margin-left: 26px;
         font-size: 12px;
         line-height: 17.11px;
-    }
+        }
     &-img{
         width: 145px;
         height: 46.88px;
-    }
+        }
     }
     .banner{
         height: 111px;
@@ -48,8 +51,8 @@
             left: 19px;
             font-size: 24px;
             width: 66%;
+            }
         }
-    }
     }
     .home{
         margin: 0 auto;
@@ -61,7 +64,8 @@
         padding-top: 0;
         padding-bottom: 27px;
         gap: 20px;
-    }}
+        }   
+    }
     .card{
         width: 100%;
     }
@@ -81,7 +85,7 @@
         }
     &_content{
         font-size: 10px;
-    }
+        }
     &_icon{
         width: 16px;
         height: 9.14px;
@@ -90,7 +94,7 @@
         &:hover{
             width: 18px;
             height: 11px;
-        }
+            }
         }
     } 
     .error{

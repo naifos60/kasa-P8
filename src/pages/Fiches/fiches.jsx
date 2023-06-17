@@ -1,35 +1,39 @@
 import Slideshow from "../../components/Slideshow/slideshow.jsx";
 import Tags from "../../components/Tags/tags.jsx";
 import Collapse from "../../components/Collapse/collapse.jsx";
+import Title from "../../components/Title/title.jsx";
 import data from '../../data/logements.jsx';
+import {useState} from 'react';
+import {useParams} from 'react-router-dom';
 
 function Fiches(){
-    const dat = data.filter(e => e === data[0]);
+    const {idLogements} = useParams();
+    const test = data.indexOf({idLogements});
+    const [index, setIndex] = useState(0);
+    const dat = data.filter(e => e === data[index]);
+
+    function nextPics(){
+        setIndex(index + 1)
+        }
+        
     return(
-        <div className="fiche">
+        <section>
             {dat.map((loc) => (
-                <Slideshow key={loc.id} img={loc.pictures[0]} />
-            
-            ))}  
-            {dat.map((loc) =>(
-                <div key={loc.id} className="loc_info">
-                    <h1 className="loc_info-title">{loc.title}</h1>
-                    <p className="loc_info-location">{loc.location}</p>       
+                <div key={loc.id} className="fiche" >
+                    <Slideshow  img={[loc.pictures[index]]} onClick={nextPics}/>
+                    <Title title={loc.title} location={loc.location} />
+                    <div className="loc_info-tags">
+                        {loc.tags.map((tags) => (
+                            <Tags key={`${loc.id}-${tags}`} text={tags}/>
+                        ))}
+                    </div>
+                    <div className="loc_info-collapse">
+                        <Collapse title="Description" content={loc.description}/>
+                        <Collapse title="Équipements" content={loc.equipments} />
+                    </div>
                 </div>
             ))}
-            {dat.map((loc) => (
-                <div key={loc.id} className="loc_info-tags">
-                    <Tags text={loc.tags[0]}/>
-                    <Tags text={loc.tags[1]} />
-                </div>
-            ))}
-            {dat.map((loc) => (
-                <div key={loc.id} className="loc_info-collapse">
-                    <Collapse  title="Description" content={loc.description}/>
-                    <Collapse title="Équipements" content={loc.equipments} />
-                </div>
-            ))}  
-        </div>
+        </section>
     )
 }
 
