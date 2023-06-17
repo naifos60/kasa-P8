@@ -147,6 +147,30 @@
   margin: 0 auto;
 }
 
+.loc_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #FF6060;
+}
+
+.arrow_right {
+  position: relative;
+  top: 240px;
+  left: 1180px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arrow_left {
+  position: relative;
+  top: 240px;
+  right: 40px;
+  z-index: 100;
+  cursor: pointer;
+}
+
 .banner {
   width: 100%;
   text-align: center;
@@ -286,7 +310,6 @@
   padding: 3px 30px;
   text-align: center;
   margin-right: 10px;
-  margin-top: 20px;
 }
 
 .loc_info-tags {
@@ -312,7 +335,6 @@
   padding: 3px 30px;
   text-align: center;
   margin-right: 10px;
-  margin-top: 20px;
 }
 
 .loc_info-tags {
@@ -324,15 +346,6 @@
   margin-bottom: 30px;
 }
 
-.loc_info {
-  width: 51%;
-  height: 51px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  color: #FF6060;
-}
 .loc_info-title {
   font-size: 36px;
   font-weight: 500;

@@ -5,3 +5,24 @@
     justify-content: center;
     margin: 0 auto;
 }
+.loc_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #FF6060;
+}
+.arrow_right{
+    position: relative;
+    top: 240px;
+    left: 1180px;
+    z-index: 100;
+    cursor: pointer;
+}
+.arrow_left{
+    position: relative;
+    top: 240px;
+    right: 40px;
+    z-index: 100;
+    cursor: pointer;
+}
