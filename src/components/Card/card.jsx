@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 function Card({id, cover, title}){
     return(
-        <Link to={`/fiches/${id}`}>
+        <Link to={`/fiches/${id}`}reloadDocument>
             <div className="card">
                 <img src={cover} alt=' vue de la location' className='card_img'/>
                 <h4 className="card_title">{title}</h4>

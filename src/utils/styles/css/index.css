@@ -56,6 +56,17 @@
   background: linear-gradient(#ff6060, #6d1c1c);
   position: relative;
   cursor: pointer;
+  transform: scale(1);
+  transition: all 0.1s ease-in;
+}
+.card:hover {
+  filter: brightness(1.06);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
+}
+.card:hover h4 {
+  color: #ff6060;
+  font-size: 19px;
 }
 .card_title {
   color: white;
@@ -153,22 +164,6 @@
   align-items: flex-start;
   justify-content: space-between;
   color: #FF6060;
-}
-
-.arrow_right {
-  position: relative;
-  top: 240px;
-  left: 1180px;
-  z-index: 100;
-  cursor: pointer;
-}
-
-.arrow_left {
-  position: relative;
-  top: 240px;
-  right: 40px;
-  z-index: 100;
-  cursor: pointer;
 }
 
 .banner {
@@ -293,7 +288,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  object-fit: cover;
+  object-fit: unset;
 }
 
 .tags {
@@ -354,6 +349,22 @@
 .loc_info-location {
   font-size: 18px;
   line-height: 25.67px;
+}
+
+.arrow_right {
+  position: relative;
+  top: 160px;
+  left: 1185px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.arrow_left {
+  position: relative;
+  top: 160.5px;
+  left: -40px;
+  z-index: 100;
+  cursor: pointer;
 }
 
 * {

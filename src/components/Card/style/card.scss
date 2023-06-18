@@ -5,6 +5,17 @@
     background: linear-gradient(#ff6060, #6d1c1c);
     position: relative;
     cursor: pointer;
+    transform: scale(1);
+    transition: all .1s ease-in;
+    &:hover{
+        filter: brightness(1.06);
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.35);
+        transform: scale(1.03);
+        & h4{
+            color: #ff6060;
+            font-size: 19px;
+        }
+    }
     &_title{
         color: white;
         position: absolute;
