@@ -291,6 +291,13 @@
   object-fit: unset;
 }
 
+.dot {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: #ffffff;
+}
+
 .tags {
   display: flex;
   justify-content: center;

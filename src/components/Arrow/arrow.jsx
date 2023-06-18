@@ -2,7 +2,7 @@ import arrowLeft from '../../assets/arrowLeft.png';
 import arrowRight from '../../assets/arrowRight.png';
    
 function Arrow({test}){
-    const nextPics = (index) => index + 1;
+    const nextPics = (index) => index +1;
     const prevPics = (index) => index -1;
     return(
         <div className="arrow">
