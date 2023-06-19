@@ -3,14 +3,24 @@ import Tags from "../../components/Tags/tags.jsx";
 import Collapse from "../../components/Collapse/collapse.jsx";
 import Title from "../../components/Title/title.jsx";
 import data from '../../data/logements.jsx';
-import {useParams} from 'react-router-dom';
+import {useParams, useNavigate} from 'react-router-dom';
+import {useEffect} from 'react';
+
+
 
 function Fiches(){
     const {idLogements} = useParams();
     const logement = (e) => e.id === idLogements;
     const test = data.findIndex(logement);
     const dat = data.filter(e => e === data[test]);
+    const navigate = useNavigate();
   
+  
+    useEffect(() => {
+    if(!data.some(t => t.id === idLogements)){
+        navigate("/error");
+        }
+    });
     return(
         <section>
             {dat.map((loc) => (

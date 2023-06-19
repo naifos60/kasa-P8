@@ -1,0 +1,13 @@
+@keyframes arrive {
+    0%{
+       transform: translateX(-80%);
+       opacity: 0;
+   }
+   50%{
+       opacity: 0.5;   
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0%);
+   }
+}
