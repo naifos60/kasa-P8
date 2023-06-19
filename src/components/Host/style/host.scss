@@ -1,0 +1,20 @@
+.loc_info-host{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    gap: 10px;
+    &-name{
+        width: 40%;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+    &-img{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+}
