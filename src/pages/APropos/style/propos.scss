@@ -9,4 +9,9 @@
         height: 223px;
         margin-bottom: 38px;
     }
+    & .active{
+        & .collapse_content{
+            height: auto;
+        } 
+    }
 }

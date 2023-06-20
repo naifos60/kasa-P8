@@ -1,10 +1,17 @@
+.loc_info-host-and-ratings{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 27px;
+    align-items: flex-end;
+    right: 0;
+}
 .loc_info-host{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    position: absolute;
-    right: 0;
     gap: 10px;
     &-name{
         width: 40%;
@@ -16,5 +23,24 @@
         width: 64px;
         height: 64px;
         border-radius: 50%;
+    }
+}
+
+@media (max-width: 768px){
+    .loc_info-host-and-ratings{
+        width: 100%;
+        flex-direction: row-reverse;
+        position: unset;
+        justify-content: space-between;
+    }
+    .loc_info-host{
+        &-name{
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+        &-img{
+            width: 32px;
+            height: 32px;
+        }
     }
 }

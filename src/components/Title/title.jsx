@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Title({title, location}){
     return(
-        <div>
+        <div className='loc_info-title-and-location'>
             <h1 className="loc_info-title">{title}</h1>
             <p className="loc_info-location">{location}</p>       
         </div>

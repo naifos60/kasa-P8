@@ -1,4 +1,3 @@
-
 .slideshow{
     height: 415px;
     width: 100%;
@@ -18,4 +17,12 @@
     top: 90%;
     left: 50%;
     color: #ffffff;
+}
+
+@media (max-width: 768px){
+    .slideshow{
+        height: 255px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
 }

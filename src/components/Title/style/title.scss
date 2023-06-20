@@ -1,11 +1,29 @@
 .loc_info{
     &-title{
+        width: 100%;
         font-size: 36px;
         font-weight: 500;
         line-height: 51.34px;
+        &-and-location{
+            width: 80%;
+        }
     }
     &-location{
         font-size: 18px;
         line-height: 25.67px;
     }
+}
+
+@media (max-width: 768px){
+    .loc_info{
+        &-title{
+            font-size: 18px;
+            line-height: 25.67px;
+        }
+        &-location{
+            font-size: 14px;
+            line-height: 19.96px;
+        }
+    }
+
 }

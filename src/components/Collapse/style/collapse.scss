@@ -47,14 +47,14 @@
         opacity: 0;
         overflow: hidden;
         transition: all .2s  ease-in .2s;
-    &-text{
-        transform: scaleY(0);
-        transform-origin: 50% 0;
-        visibility: hidden;
-        height: 0;
-        opacity: 0;
-        transition: all .2s ease-in;
-    }
+        &-text{
+            transform: scaleY(0);
+            transform-origin: 50% 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: all .2s ease-in;
+        }
     }     
 }
 .active{
@@ -99,6 +99,7 @@
         }
     &_content{
         font-size: 10px;
+        line-height: 17.11px;
         }
     &_icon{
         width: 16px;
@@ -108,6 +109,23 @@
         &:hover{
             width: 18px;
             height: 11px;
+            }
+        }
+    }
+.active .collapse{
+    &_content{
+        height: 151px;
+    }
+}
+.loc_info{
+    &-collapse{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 37px;
+        gap: 0;
+            & .collapse{
+                width: 100%;
             }
         }
     } 

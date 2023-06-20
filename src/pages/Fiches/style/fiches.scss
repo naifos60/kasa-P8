@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    padding: 0px 100px;
 }
 .loc_info{
     max-width: 1240px;
@@ -13,4 +14,10 @@
     justify-content: space-between;
     color: #FF6060;
     position: relative;
+}
+
+@media (max-width: 768px) {
+    .fiche{
+        padding: 0;
+    }  
 }
