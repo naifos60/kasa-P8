@@ -3,6 +3,7 @@ import Tags from "../../components/Tags/tags.jsx";
 import Collapse from "../../components/Collapse/collapse.jsx";
 import Title from "../../components/Title/title.jsx";
 import Host from "../../components/Host/host.jsx";
+import Rating from "../../components/Rating/rating.jsx";
 import data from '../../data/logements.jsx';
 import {useParams, useNavigate} from 'react-router-dom';
 import {useEffect} from 'react';
@@ -25,20 +26,22 @@ function Fiches(){
     return(
         <section>
             {dat.map((loc) => (
-                <div key={loc.id} className="fiche"  >
-                    <Slideshow  img={loc.pictures} />
+                <div key={loc.id} className="fiche">
+                    <Slideshow  img={loc.pictures}/>
                     <div className="loc_info">
-                        <Title title={loc.title} location={loc.location} />
-                        <Host profile={loc.host.picture} name={loc.host.name} />
+                        <Title title={loc.title} location={loc.location}/>
+                        <Host profile={loc.host.picture} name={loc.host.name}/>
                         <div className="loc_info-tags">
                             {loc.tags.map((tags) => (
                             <Tags key={`${loc.id}-${tags}`} text={tags}/>
                             ))}
                         </div>
-
                         <div className="loc_info-collapse">
                             <Collapse title="Description" content={loc.description}/>
-                            <Collapse title="Équipements" content={loc.equipments} className='collapse_equipements' />
+                            <Collapse title="Équipements" content={loc.equipments}/>
+                        </div>
+                        <div className="loc_info-ratings">
+                            <Rating note={loc.rating} />
                         </div>
                     </div>
                 </div>

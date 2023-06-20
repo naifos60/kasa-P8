@@ -1,0 +1,15 @@
+.loc_info{
+    &-ratings{
+        position: absolute;
+        top: 90px;
+        left: 84.7%;
+        &-rating{
+            display: flex;
+            gap: 15.75px;
+            &-img{
+                width: 24.75px;
+                height: 24px;
+            }
+        }
+    }
+}

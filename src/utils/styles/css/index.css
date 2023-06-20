@@ -518,6 +518,20 @@
   border-radius: 50%;
 }
 
+.loc_info-ratings {
+  position: absolute;
+  top: 90px;
+  left: 84.7%;
+}
+.loc_info-ratings-rating {
+  display: flex;
+  gap: 15.75px;
+}
+.loc_info-ratings-rating-img {
+  width: 24.75px;
+  height: 24px;
+}
+
 * {
   margin: 0px;
   padding: 0;
