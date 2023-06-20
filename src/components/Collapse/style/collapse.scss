@@ -78,7 +78,6 @@
         }
     }
 }
-
 .loc_info{
     &-collapse{
         width: 100%;
@@ -86,4 +85,30 @@
         margin-bottom: 50px;
         gap: 76px;
     }
+}
+
+@media (max-width: 768px){
+.collapse{ 
+        margin-bottom: 0;
+
+    &_title{ 
+        padding: 0 10px;
+        & h4{
+            font-size: 13px;
+           }
+        }
+    &_content{
+        font-size: 10px;
+        }
+    &_icon{
+        width: 16px;
+        height: 9.14px;
+        top: 10px;
+        right: 10px;
+        &:hover{
+            width: 18px;
+            height: 11px;
+            }
+        }
+    } 
 }

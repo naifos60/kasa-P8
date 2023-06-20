@@ -1,5 +1,6 @@
 import { useState } from "react";
 import dropUp from "../../assets/dropUP.png";
+import PropTypes from 'prop-types';
 
 function Collapse({title, content}){
     const [open, setOpen] = useState(false); 
@@ -17,9 +18,13 @@ function Collapse({title, content}){
             <div className={`collapse_content ${open && "active"}`}>
                 <p className={`collapse_content-text ${open && "active"}`}>{content}</p>
             </div> 
-        </div>
-            
+        </div>      
     )
+}
+
+Collapse.propsTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.array.isRequired,
 }
 
 export default Collapse

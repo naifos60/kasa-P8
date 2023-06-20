@@ -1,5 +1,6 @@
 .home {
   max-width: 1240px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,6 +23,20 @@
   gap: 50px;
 }
 
+@media (max-width: 768px) {
+  .home {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .home_card-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 27px;
+    gap: 20px;
+  }
+}
 .header {
   max-width: 1240px;
   padding: 45px 100px;
@@ -49,6 +64,21 @@
   height: 68px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+    margin: 30px auto;
+  }
+  .header-nav {
+    margin-left: 26px;
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+  .header-img {
+    width: 145px;
+    height: 46.88px;
+  }
+}
 .card {
   width: 340px;
   height: 340px;
@@ -86,6 +116,12 @@
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    height: 255px;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -105,6 +141,13 @@
   margin-bottom: 42px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}
 .error {
   max-width: 1240px;
   display: flex;
@@ -122,9 +165,9 @@
   color: #FF6060;
 }
 .error_img {
-  margin-top: 145px;
-  height: 263px;
-  width: 597px;
+  margin-top: 50px;
+  height: 160px;
+  width: auto;
 }
 
 .return_link {
@@ -137,6 +180,24 @@
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .error_msg {
+    width: 260px;
+    font-size: 18px;
+    line-height: 25.67px;
+    margin-top: 113px;
+    margin-bottom: 113px;
+    text-align: center;
+  }
+  .error_img {
+    height: 99px;
+    width: 198px;
+  }
+  .return_link {
+    margin-bottom: 113px;
+    font-size: 14px;
+  }
+}
 .propos {
   max-width: 1240px;
   display: flex;
@@ -193,6 +254,26 @@
   animation: arrive 1s ease-in-out forwards;
 }
 
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+    text-align: start;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .banner_img {
+    height: 100%;
+    border-radius: 10px;
+  }
+  .banner_img-text {
+    position: absolute;
+    top: 25%;
+    left: 19px;
+    font-size: 24px;
+    width: 66%;
+  }
+}
 .collapse {
   width: 82.5%;
   height: 52px;
@@ -280,6 +361,30 @@
   gap: 76px;
 }
 
+@media (max-width: 768px) {
+  .collapse {
+    margin-bottom: 0;
+  }
+  .collapse_title {
+    padding: 0 10px;
+  }
+  .collapse_title h4 {
+    font-size: 13px;
+  }
+  .collapse_content {
+    font-size: 10px;
+  }
+  .collapse_icon {
+    width: 16px;
+    height: 9.14px;
+    top: 10px;
+    right: 10px;
+  }
+  .collapse_icon:hover {
+    width: 18px;
+    height: 11px;
+  }
+}
 .slideshow {
   height: 415px;
   width: 100%;
@@ -364,17 +469,17 @@
 }
 
 .arrow_right {
-  position: relative;
-  top: 160px;
-  left: 1185px;
+  position: absolute;
+  top: 40%;
+  left: 94%;
   z-index: 100;
   cursor: pointer;
 }
 
 .arrow_left {
-  position: relative;
-  top: 160.5px;
-  left: -40px;
+  position: absolute;
+  top: 40%;
+  left: 23.36px;
   z-index: 100;
   cursor: pointer;
 }
@@ -424,93 +529,6 @@
   body {
     max-width: 768px;
     padding: 20px;
-  }
-  .header {
-    padding: 0;
-    margin: 30px auto;
-  }
-  .header-nav {
-    margin-left: 26px;
-    font-size: 12px;
-    line-height: 17.11px;
-  }
-  .header-img {
-    width: 145px;
-    height: 46.88px;
-  }
-  .banner {
-    height: 111px;
-    text-align: start;
-    margin-bottom: 22px;
-    border-radius: 10px;
-    position: relative;
-  }
-  .banner_img {
-    height: 100%;
-    border-radius: 10px;
-  }
-  .banner_img-text {
-    position: absolute;
-    top: 25%;
-    left: 19px;
-    font-size: 24px;
-    width: 66%;
-  }
-  .home {
-    margin: 0 auto;
-    padding: 0;
-  }
-  .home_card-container {
-    display: flex;
-    flex-direction: column;
-    background: #FFFFFF;
-    padding-top: 0;
-    padding-bottom: 27px;
-    gap: 20px;
-  }
-  .card {
-    width: 100%;
-  }
-  .footer {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 0px;
-  }
-  .collapse {
-    margin-bottom: 0;
-  }
-  .collapse_title {
-    padding: 0 10px;
-  }
-  .collapse_title h4 {
-    font-size: 13px;
-  }
-  .collapse_content {
-    font-size: 10px;
-  }
-  .collapse_icon {
-    width: 16px;
-    height: 9.14px;
-    top: 10px;
-    right: 10px;
-  }
-  .collapse_icon:hover {
-    width: 18px;
-    height: 11px;
-  }
-  .error_msg {
-    width: 260px;
-    font-size: 18px;
-    line-height: 25.67px;
-    margin-bottom: 113px;
-    text-align: center;
-  }
-  .error_img {
-    height: 99px;
-    width: 198px;
-  }
-  .return_link {
-    margin-bottom: 113px;
   }
 }
 

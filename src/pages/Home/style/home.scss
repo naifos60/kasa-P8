@@ -1,5 +1,6 @@
 .home{
     max-width: 1240px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,5 +20,20 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 50px;
+    }
+}
+
+@media (max-width: 768px){
+.home{
+        margin: 0 auto;
+        padding: 0;
+    &_card-container{
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            padding-top: 0;
+            padding-bottom: 27px;
+            gap: 20px;
+        }   
     }
 }

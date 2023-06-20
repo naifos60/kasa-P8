@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import rectangle from '../../assets/Rectangle 2.png';
 import {Link} from 'react-router-dom';
 
 
@@ -19,9 +18,5 @@ Card.propTypes = {
     title: PropTypes.string.isRequired,
 }
 
-Card.defaultProps = {
-    cover: rectangle,
-    title: 'Titre de la location',
-}
 
 export default Card

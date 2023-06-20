@@ -5,21 +5,20 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-&_msg{
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51.34px;
-    margin-bottom: 139px;
-    margin-top: 139px;
-    color:  #FF6060;
+    &_msg{
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51.34px;
+        margin-bottom: 139px;
+        margin-top: 139px;
+        color:  #FF6060;
     }
-&_img{
-    margin-top: 145px;
-    height: 263px;
-    width: 597px;
+    &_img{
+        margin-top: 50px;
+        height: 160px;
+        width: auto;
+    }
 }
-}
-
 .return_link{
     color: #FF6060;
     margin-bottom: 139px;
@@ -28,5 +27,25 @@
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+}
 
+@media (max-width: 768px){
+.error{
+    &_msg{
+        width: 260px;
+        font-size: 18px;
+        line-height: 25.67px;
+        margin-top: 113px;
+        margin-bottom: 113px;
+        text-align: center;
+        }
+    &_img{
+            height: 99px;
+            width: 198px;
+        }
+    }
+.return_link{
+        margin-bottom: 113px;
+        font-size: 14px;
+    }
 }

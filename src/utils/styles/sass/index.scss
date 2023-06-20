@@ -14,6 +14,7 @@
 @import"../../../components/Arrow/style/arrow.scss";
 @import"./keyframe/keyframe.scss";
 @import"../../../components/Host/style/host.scss";
+
 *{
     margin: 0px;
     padding: 0;
@@ -24,95 +25,5 @@
     body{
         max-width: 768px;
         padding: 20px;
-    }
-    .header{
-        padding: 0 ;
-        margin: 30px auto;
-    &-nav{
-        margin-left: 26px;
-        font-size: 12px;
-        line-height: 17.11px;
-        }
-    &-img{
-        width: 145px;
-        height: 46.88px;
-        }
-    }
-    .banner{
-        height: 111px;
-        text-align: start;
-        margin-bottom: 22px;
-        border-radius: 10px;
-        position: relative;
-    &_img{
-        height: 100%;
-        border-radius: 10px;
-        &-text{
-            position: absolute;
-            top: 25%;
-            left: 19px;
-            font-size: 24px;
-            width: 66%;
-            }
-        }
-    }
-    .home{
-        margin: 0 auto;
-        padding: 0;
-&_card-container{
-        display: flex;
-        flex-direction: column;
-        background: #FFFFFF;
-        padding-top: 0;
-        padding-bottom: 27px;
-        gap: 20px;
-        }   
-    }
-    .card{
-        width: 100%;
-    }
-    .footer{
-        text-align: center;
-        font-size: 12px;
-        margin-top: 0px;
-    }
-    .collapse{ 
-        margin-bottom: 0;
-
-    &_title{ 
-        padding: 0 10px;
-        & h4{
-            font-size: 13px;
-           }
-        }
-    &_content{
-        font-size: 10px;
-        }
-    &_icon{
-        width: 16px;
-        height: 9.14px;
-        top: 10px;
-        right: 10px;
-        &:hover{
-            width: 18px;
-            height: 11px;
-            }
-        }
-    } 
-    .error{
-        &_msg{
-            width: 260px;
-            font-size: 18px;
-            line-height: 25.67px;
-            margin-bottom: 113px;
-            text-align: center;
-        }
-        &_img{
-            height: 99px;
-            width: 198px;
-        }
-    }
-    .return_link{
-        margin-bottom: 113px;
-    }
+    }  
 }
