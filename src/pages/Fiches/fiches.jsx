@@ -5,7 +5,7 @@ import Title from "../../components/Title/title.jsx";
 import Host from "../../components/Host/host.jsx";
 import Rating from "../../components/Rating/rating.jsx";
 import Equipements from "../../components/Equipements/equipements.jsx";
-import data from '../../data/logements.jsx';
+import data from '../../data/logement.json';
 import {useParams, useNavigate} from 'react-router-dom';
 import {useEffect} from 'react';
 
