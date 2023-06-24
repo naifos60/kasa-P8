@@ -39,6 +39,7 @@
 }
 .header {
   max-width: 1240px;
+  width: 100%;
   padding: 45px 100px;
   display: flex;
   flex-direction: row;
