@@ -4,8 +4,7 @@ import starUnColor from '../../assets/starUnColor.png';
 
 
 function Rating({note}){
-    const n = parseInt(note)
-    const end = (n - 1);
+    const end = parseInt(note)
     const ratings = [starUnColor,starUnColor,starUnColor,starUnColor,starUnColor];
     const t = ratings.fill(starColor, 0, end);
     return(
