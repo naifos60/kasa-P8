@@ -9,9 +9,9 @@ import Fiches from './pages/Fiches/fiches.jsx';
 
 function App(){
     return(
-    <Router>
+    <Router basename={"/kasa-P8"}>
       <Header />
-        <Routes basename={"/kasa-P8"}> 
+        <Routes > 
           <Route path='/' element={<Home />} />
           <Route path='/propos' element={<Propos />} />         
           <Route path='/fiches/:idLogements' element={<Fiches />} />
