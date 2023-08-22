@@ -9,12 +9,12 @@ import Fiches from './pages/Fiches/fiches.jsx';
 
 function App(){
     return(
-    <Router basename={"/kasa-P8"}>
+    <Router basename={"/kasa-P8/"}>
       <Header />
         <Routes > 
           <Route path='/' element={<Home />} />
           <Route path='/propos' element={<Propos />} />         
-          <Route path='/fiches/:idLogements' element={<Fiches />} />
+          <Route path='/fiches/:id' element={<Fiches />} />
           <Route path='*' element={<Error />} />
         </Routes>
       <Footer />
