@@ -21,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch ./src/utils/styles/sass/index.scss:./src/utils/styles/css/index.css"
+    "sass": "sass --watch ./src/utils/styles/sass/index.scss:./src/utils/styles/css/index.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://naifos60.github.io/kasa/",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
