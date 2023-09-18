@@ -10,7 +10,6 @@ import {useParams, useNavigate} from 'react-router-dom';
 import {useEffect} from 'react';
 
 
-
 function Fiches(){
     const {idLogements} = useParams();
     const logement = (e) => e.id === idLogements;
