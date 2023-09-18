@@ -11,15 +11,15 @@ import {useEffect} from 'react';
 
 
 function Fiches(){
-    const {idLogements} = useParams();
-    const logement = (e) => e.id === idLogements;
+    const {id} = useParams();
+    const logement = (e) => e.id === id;
     const test = data.findIndex(logement);
     const dat = data.filter(e => e === data[test]);
     const navigate = useNavigate();
   
   
     useEffect(() => {
-    if(!data.some(t => t.id === idLogements)){
+    if(!data.some(t => t.id === id)){
         navigate("/error");
         }
     });
